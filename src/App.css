@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/* ====================================================================== */
+/* Scrollbar
+/* ====================================================================== */
+::-webkit-scrollbar {
+  height: 3px; /* height property applies only to horizontal scrollbars */
+  width: 14px; /* width property applies only to vertical scrollbars */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* vertical scrollbars */
+::-webkit-scrollbar-track:vertical {
+  background-color: #eeeeee;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #bababa;
+  border-radius: 8px;
+  background-clip: content-box;
+  border: 3px solid transparent;
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #7d7d7d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* horizontal scrollbars */
+::-webkit-scrollbar-track:horizontal {
+  background-color: #f2f2f2;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #2e2e2e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  -webkit-print-color-adjust: exact;
 }
