@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import HomePage from './pages/HomePage/HomePage';
 import Header from './pages/Header/Header';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route component={NotFoundPage} />
         </Switch>
       </main>
+      <Footer />
+      
     </>
   );
 }

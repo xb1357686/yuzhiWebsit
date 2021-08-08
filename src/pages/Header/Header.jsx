@@ -13,7 +13,7 @@ import Logo from "../../assets/logo.jpeg";
 
 function Header() {
   return (
-    <Box position="fixed" top="0" h="74px" w="100%" p="20px 0" bg="#fff">
+    <Box position="fixed" top="0" h="74px" w="100%" p="20px 0" bg="#fff" zIndex="10">
       <Box w="1160px" alignItems="center" m="0 auto">
         <Flex>
           <Flex mr="100px">
