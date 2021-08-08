@@ -6,6 +6,7 @@ import {
   Button,
   Grid,
   Box,
+  Link,
 } from "@chakra-ui/react";
 import banner from "../../assets/banner.jpg";
 
@@ -35,7 +36,14 @@ function Banner() {
             </Menu>
           </GridItem>
           <GridItem colSpan={1} h="10">
-            <Button colorScheme="blue">联系我们</Button>
+            <Button
+              colorScheme="blue"
+              as={Link}
+              target="_blank"
+              href="https://jinshuju.net/f/D9YFHe"
+            >
+              联系我们
+            </Button>
           </GridItem>
         </Grid>
       </Box>
