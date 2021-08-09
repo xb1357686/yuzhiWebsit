@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/yuzhiWebsit/static/css/main.1b95929e.chunk.css",
+    "main.js": "/yuzhiWebsit/static/js/main.dcfaef0c.chunk.js",
+    "main.js.map": "/yuzhiWebsit/static/js/main.dcfaef0c.chunk.js.map",
+    "runtime-main.js": "/yuzhiWebsit/static/js/runtime-main.f37b1e53.js",
+    "runtime-main.js.map": "/yuzhiWebsit/static/js/runtime-main.f37b1e53.js.map",
+    "static/js/2.0cc54902.chunk.js": "/yuzhiWebsit/static/js/2.0cc54902.chunk.js",
+    "static/js/2.0cc54902.chunk.js.map": "/yuzhiWebsit/static/js/2.0cc54902.chunk.js.map",
+    "index.html": "/yuzhiWebsit/index.html",
+    "static/css/main.1b95929e.chunk.css.map": "/yuzhiWebsit/static/css/main.1b95929e.chunk.css.map",
+    "static/js/2.0cc54902.chunk.js.LICENSE.txt": "/yuzhiWebsit/static/js/2.0cc54902.chunk.js.LICENSE.txt",
+    "static/media/about.5eec0fed.png": "/yuzhiWebsit/static/media/about.5eec0fed.png",
+    "static/media/banner.542f63b9.jpg": "/yuzhiWebsit/static/media/banner.542f63b9.jpg",
+    "static/media/banner1.11f64c55.jpg": "/yuzhiWebsit/static/media/banner1.11f64c55.jpg",
+    "static/media/banner2.2c24bfa6.jpg": "/yuzhiWebsit/static/media/banner2.2c24bfa6.jpg",
+    "static/media/banner5.b193ea68.png": "/yuzhiWebsit/static/media/banner5.b193ea68.png",
+    "static/media/banner6.8c7fab3f.jpg": "/yuzhiWebsit/static/media/banner6.8c7fab3f.jpg",
+    "static/media/banner7.2d3310dc.png": "/yuzhiWebsit/static/media/banner7.2d3310dc.png",
+    "static/media/banner8.d22203c0.png": "/yuzhiWebsit/static/media/banner8.d22203c0.png",
+    "static/media/code1.023e085d.png": "/yuzhiWebsit/static/media/code1.023e085d.png",
+    "static/media/code2.854e2cb5.png": "/yuzhiWebsit/static/media/code2.854e2cb5.png",
+    "static/media/logo.a3e9faa5.jpeg": "/yuzhiWebsit/static/media/logo.a3e9faa5.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f37b1e53.js",
+    "static/js/2.0cc54902.chunk.js",
+    "static/css/main.1b95929e.chunk.css",
+    "static/js/main.dcfaef0c.chunk.js"
+  ]
+}
