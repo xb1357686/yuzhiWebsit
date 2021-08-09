@@ -1,22 +1,70 @@
-import { Image, Box, Text, Button, Link } from "@chakra-ui/react";
-import Curriculum11 from "../../assets/Curriculum11.png";
-import Curriculum2 from "../../assets/Curriculum2.png";
-import Curriculum3 from "../../assets/Curriculum3.png";
+import React, { Component } from 'react';
+import Swiper from "swiper";
+// import Swiper from "swiper/dist/js/swiper.js";
+import "swiper/swiper-bundle.css";
+class CurriculumImg extends Component {
 
 
-function Introduce() {
+    componentDidMount() {
+        new Swiper(".swiper-container", {
+            slidesPerView: 6,
+            // centeredSlides: false,
+            loop: true,
+            
+            // observeParents:true,
+            // observer:true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+              }, scrollbar: {
+                el: '.swiper-scrollbar',
+              },
 
-    // 在合适的生命周期函数中实例化 Swiper
+        });
 
-    return (
-        <Box padding=" 50px 0" textAlign="center" bg="#F8F8F8">
-            <Box paddingBottom="60px">
-                <Image src={Curriculum11}  display="inline-block" marginRight="10px"/>
-                <Box display="inline-block" fontSize="18px" verticalAlign="bottom">体系化创客教育课程</Box>
-            </Box>
-            asdfasdf
 
-        </Box>
-    );
+    }
+    // prev =(e)=>{
+    //     this.$refs.swiperTop.$swiper.slidePrev();
+    // }
+
+
+    render() {
+        return (
+            <div>
+            <div class="swiper-container"           style={{
+                width: "1200px",
+                height: "100px",
+              }}>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev">11111111111111111111</div>
+                <div class="swiper-button-next">22222222222222222</div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            </div>
+        );
+    }
 }
-export default Introduce;
+
+export default CurriculumImg;
