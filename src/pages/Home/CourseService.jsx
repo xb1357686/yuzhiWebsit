@@ -1,6 +1,7 @@
 import { Image, Box, Text, Button, Link } from "@chakra-ui/react";
 import banner1 from "../../assets/banner1.jpg";
 import xz from "../../assets/xz.png";
+import Swiper2 from "./swiper2";
 
 
 function Introduce() {
@@ -16,12 +17,12 @@ function Introduce() {
                 <Box display="inline-block" width="6px" height="38px" background="#E61E32" borderRadius="10px"></Box>
                 <Box display="inline-block" height="38px" lineHeight="38px" marginLeft="10px" fontSize="26px"
                     verticalAlign="top"
-                >课程</Box>
+                >案例展示(前海学校）</Box>
             </Box>
 
             <Box d="flex">
                 <Box w="50%" p={2}  >
-                    <Image src={xz} />
+                    <Swiper2></Swiper2>
                 </Box>
                 <Box w="50%" p={2} >
                     <Box w="90%">

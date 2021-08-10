@@ -1,6 +1,7 @@
 import { Image, Box, Text, Button, Link } from "@chakra-ui/react";
 import banner1 from "../../assets/banner1.jpg";
 import xz from "../../assets/xz.png";
+import Swiper1 from "./swiper1";
 
 
 function Introduce() {
@@ -20,8 +21,8 @@ function Introduce() {
             </Box>
 
             <Box d="flex">
-                <Box w="50%" p={2}  >
-                    <Image src={xz} />
+                <Box w="50%" p={2}  overflow="hidden">
+                    <Swiper1></Swiper1>
                 </Box>
                 <Box w="50%" p={2} >
                     <Box w="90%">
