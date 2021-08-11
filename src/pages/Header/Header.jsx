@@ -4,17 +4,18 @@ import {
   Image,
   Menu,
   MenuButton,
-  Link,
   Box,
   MenuList,
   MenuItem,
   Button,
-  ReachLink,
+  Link,
 } from "@chakra-ui/react";
+import { useLocation, Route, Switch, useHistory } from "react-router-dom";
 import { MenuBtn } from "./Header.styles";
-import Logo from "../../assets/logo.jpeg";
+import Logo from "../../assets/logo.jpg";
 
 function Header() {
+  const history = useHistory();
   return (
     <Box
       position="fixed"
@@ -27,11 +28,8 @@ function Header() {
     >
       <Box w="1160px" alignItems="center" m="0 auto">
         <Flex>
-          <Flex mr="100px" as={Link} to="/">
-            <Image boxSize="30px" src={Logo} alt="logo" mr="10px" />
-            <Text fontSize="lg" fontWeight="bold" color="#2ea3f2" pt="6px">
-              育智科创
-            </Text>
+          <Flex mr="100px" as={Link} onClick={() => history.push("/")}>
+            <Image w="155px" src={Logo} alt="logo" mr="10px" />
           </Flex>
           <Menu>
             <MenuButton p="0 30px">产品中心</MenuButton>
@@ -42,8 +40,10 @@ function Header() {
               <MenuItem>数智化创新领袖</MenuItem>
             </MenuList>
           </Menu>
-          <Menu as={Link} to="/solution">
-            <MenuBtn p="0 30px">科创教育解决方案</MenuBtn>
+          <Menu as={Link}>
+            <MenuBtn onClick={() => history.push("/solution")} p="0 30px">
+              教育服务
+            </MenuBtn>
           </Menu>
           <Menu>
             <MenuButton p="0 30px">新闻中心</MenuButton>
