@@ -1,4 +1,5 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
+
 
 // components
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
@@ -10,6 +11,8 @@ import Banner from "./pages/Banner/Banner";
 
 
 function App() {
+  const { pathname } = useLocation();
+  console.log(pathname)
   return (
     <>
       <Header />
