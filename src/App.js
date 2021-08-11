@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import Header from './pages/Header/Header';
 import Footer from './pages/Footer/Footer';
 import Banner from "./pages/Banner/Banner";
+import newsLi from "./pages/newsLi/newsLi";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/solution" component={HomePage} />
+          <Route exact path="/newsLi" component={newsLi} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>

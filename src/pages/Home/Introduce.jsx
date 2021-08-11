@@ -8,8 +8,10 @@ function Introduce() {
 
     return (
         <Box padding="80px">
-
-
+            {/* <link rel="stylesheet"  /> asdfasdf</Link> */}
+          <Link href="../newsLi">
+          跳跳虾 
+        </Link>
             <Box d="flex">
                 <Box w="65%" p={2} >
                     <Box w="90%">
