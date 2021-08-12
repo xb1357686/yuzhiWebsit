@@ -1,5 +1,5 @@
 import { Route, Switch, useLocation } from 'react-router-dom';
-
+import { useState, useEffect } from "react";
 
 // components
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
@@ -8,19 +8,26 @@ import Home from './pages/Home/Home';
 import Header from './pages/Header/Header';
 import Footer from './pages/Footer/Footer';
 import Banner from "./pages/Banner/Banner";
+import newsLi from "./pages/newsLi/newsLi";
 
 
 function App() {
+  const [isShow, setIsShow] = useState(true);
   const { pathname } = useLocation();
-  console.log(pathname)
+  useEffect(() => {
+    if (pathname.includes('/newsList')) {
+      setIsShow(false);
+    }
+  }, [pathname])
   return (
     <>
       <Header />
-      <Banner />
+      {isShow && <Banner />}
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/solution" component={HomePage} />
+          <Route exact path="/newsList" component={newsLi} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>

@@ -5,46 +5,12 @@ import Swiper1 from "./swiper1";
 
 function Introduce() {
   return (
-    <Box padding="80px" w="1160px" m="0 auto">
-      <Box paddingBottom="15px">
-        <Box
-          display="inline-block"
-          width="6px"
-          height="38px"
-          background="#E61E32"
-          borderRadius="10px"
-        ></Box>
-        <Box
-          display="inline-block"
-          height="38px"
-          lineHeight="38px"
-          marginLeft="10px"
-          fontSize="26px"
-          verticalAlign="top"
-        >
-          案例展示(福田劳动技术教育中心）
-        </Box>
-      </Box>
-
+    <Box w="1160px" m="0 auto">
       <Box d="flex">
-        <Box w="50%" p={2}>
-          <Image src={xz} />
-        </Box>
-        <Box w="50%" p={2}>
-          <Box w="90%">
-            <Box paddingBottom="10px">
-              <Box
-                display="inline-block"
-                height="30px"
-                lineHeight="30px"
-                fontSize="20px"
-              >
-                学校简介:
-              </Box>
-            </Box>
-
+        <Box p={2}>
+          <Box>
             <Box d="flex">
-              <Box w="50%" p={2} overflow="hidden">
+              <Box w="500px" p={2} overflow="hidden">
                 <Swiper1></Swiper1>
               </Box>
               <Box w="50%" p={2}>

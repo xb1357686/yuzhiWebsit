@@ -46,7 +46,9 @@ function Header() {
             </MenuBtn>
           </Menu>
           <Menu>
-            <MenuButton p="0 30px">新闻中心</MenuButton>
+            <MenuButton p="0 30px" onClick={() => history.push("/newsList")}>
+              新闻中心
+            </MenuButton>
           </Menu>
           <Menu>
             <MenuButton p="0 30px">关于我们</MenuButton>
