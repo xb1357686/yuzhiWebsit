@@ -28,7 +28,11 @@ function Header() {
     >
       <Box w="1160px" alignItems="center" m="0 auto">
         <Flex>
-          <Flex mr="100px" as={Link} onClick={() => history.push("/")}>
+          <Flex
+            mr="100px"
+            as={Link}
+            onClick={() => history.push(window.ENV.URLPATHNAME)}
+          >
             <Image w="155px" src={Logo} alt="logo" mr="10px" />
           </Flex>
           <Menu>
@@ -41,12 +45,18 @@ function Header() {
             </MenuList>
           </Menu>
           <Menu as={Link}>
-            <MenuBtn onClick={() => history.push("/solution")} p="0 30px">
+            <MenuBtn
+              onClick={() => history.push(`${window.ENV.URLPATHNAME}solution`)}
+              p="0 30px"
+            >
               教育服务
             </MenuBtn>
           </Menu>
           <Menu>
-            <MenuButton p="0 30px" onClick={() => history.push("/newsList")}>
+            <MenuButton
+              p="0 30px"
+              onClick={() => history.push(`${window.ENV.URLPATHNAME}newsList`)}
+            >
               新闻中心
             </MenuButton>
           </Menu>

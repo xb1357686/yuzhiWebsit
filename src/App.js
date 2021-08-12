@@ -17,6 +17,8 @@ function App() {
   useEffect(() => {
     if (pathname.includes('/newsList')) {
       setIsShow(false);
+    } else {
+      setIsShow(true);
     }
   }, [pathname])
   return (
@@ -25,9 +27,9 @@ function App() {
       {isShow && <Banner />}
       <main>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/solution" component={HomePage} />
-          <Route exact path="/newsList" component={newsLi} />
+          <Route exact path={window.ENV.URLPATHNAME} component={Home} />
+          <Route exact path={`${window.ENV.URLPATHNAME}solution`} component={Home} />
+          <Route exact path={`${window.ENV.URLPATHNAME}newsList`} component={newsLi} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>
