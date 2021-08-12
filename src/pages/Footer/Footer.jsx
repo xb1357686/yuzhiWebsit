@@ -1,19 +1,9 @@
-import {
-  Text,
-  Flex,
-  Image,
-  Menu,
-  MenuButton,
-  Button,
-  Link,
-  Box,
-  MenuList,
-  MenuItem,
-} from "@chakra-ui/react";
+import { Text, Image, Box } from "@chakra-ui/react";
 import code1 from "../../assets/code1.jpg";
 import code2 from "../../assets/code2.png";
 import tb from "../../assets/tb.jpg";
 import Address from "./address";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -52,7 +42,7 @@ function Footer() {
             新闻中心
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            <Link href="https://chakra-ui.com">官方新闻</Link>
+            <Link to="/newsList">官方新闻</Link>
           </Box>
         </Box>
         <Box w="450px">
@@ -110,7 +100,7 @@ function Footer() {
             color="#666"
             paddingBottom="30px"
           >
-            新闻中心
+            公司地址
           </Box>
           <Address />
         </Box>

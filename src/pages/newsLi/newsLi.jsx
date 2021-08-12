@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Image, Link, Box } from "@chakra-ui/react";
+import newsListPng from "../../assets/newsList.png";
 
 function NewsList() {
   const [newsList, setNewsList] = useState([]);
@@ -20,6 +21,9 @@ function NewsList() {
 
   return (
     <Box padding="60px 80px" bg="#fafafb">
+      <Box>
+        <Image src={newsListPng} />
+      </Box>
       {newsList.map((item, index) => {
         return (
           <Link href="https://www.jiemodui.com/N/123274" key={index}>

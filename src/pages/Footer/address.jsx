@@ -9,11 +9,11 @@ function Address() {
     //https://lbs.amap.com/api/javascript-api/guide/abc/prepare这里有介绍key怎么申请
     mapKey: "1234567809843asadasd", //Key就不贴出来了奥
     status: {
-      zoomEnable: false,
+      zoomEnable: true,
       dragEnable: false,
     },
-    mapCenter: [113.959204, 22.585642], //地图中心点
-    mapMake: [113.959204, 22.585642], //marker标记点
+    mapCenter: [113.933334, 22.63607], //地图中心点
+    mapMake: [113.933334, 22.63607], //marker标记点
   });
 
   return (
@@ -31,7 +31,7 @@ function Address() {
             // 设置文本标注偏移量
             //   offset: new AMap.Pixel(20, 20),
             // 设置文本标注内容
-            content: "<div >未来科城先进制造产业园</div>",
+            content: "<div >深圳育智科创科技有限公司</div>",
             // 设置文本标注方位
             direction: "top",
           }}
