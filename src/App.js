@@ -28,7 +28,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path={window.ENV.URLPATHNAME} component={Home} />
-          <Route exact path={`${window.ENV.URLPATHNAME}solution`} component={Home} />
+          <Route exact path={`${window.ENV.URLPATHNAME}solution`} component={HomePage} />
           <Route exact path={`${window.ENV.URLPATHNAME}newsList`} component={newsLi} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
