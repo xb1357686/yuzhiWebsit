@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Box } from "@chakra-ui/react";
 import CompanyProfile from "./CompanyProfile";
+import Contact from "./Contact";
+import Mission from "./mission";
+import './index.css';
 
 export default class AboutUs extends Component {
     constructor(props) {
@@ -24,7 +27,6 @@ export default class AboutUs extends Component {
         }
     }
     aboutClict = (i) => {
-        console.log(i)
         this.setState({
             aboutNavID: i
         })
@@ -36,25 +38,29 @@ export default class AboutUs extends Component {
         const { aboutNavID, aboutNav } = this.state;
         return (
             <Box>
-                <Box bg="#ccc" padding="20px 0">
+                <Box bg="#fff" padding="20px 0">
                     <Box padding="0 80px" d="flex" w="1300px" margin="0 auto" justifyContent="space-around" flexDirection="row" >
                         {
                             aboutNav.map((item, index) => {
                                 return (
-                                    <Box key={index} cursor="pointer" onClick={() => this.aboutClict(item.id)}>{item.name}{aboutNavID}</Box>
+                                    <Box key={index} cursor="pointer"
+                                        onClick={() => this.aboutClict(item.id)}
+                                        className={aboutNavID == item.id ? "name" : ""}
+                                        fontSize="20px"
+                                    >{item.name}</Box>
                                 )
                             })
                         }
                     </Box>
                 </Box>
                 {
-                    aboutNavID == 1 ? 
-                    (<CompanyProfile ></CompanyProfile>) 
-                    : aboutNavID == 2 ? 
-                    (<Box>22</Box>) 
-                    : aboutNavID == 3 ? 
-                    (<Box >33</Box>)
-                    : null
+                    aboutNavID == 1 ?
+                        (<CompanyProfile ></CompanyProfile>)
+                        : aboutNavID == 2 ?
+                            (<Mission></Mission>)
+                            : aboutNavID == 3 ?
+                                (<Contact >33</Contact>)
+                                : null
                 }
 
             </Box>
