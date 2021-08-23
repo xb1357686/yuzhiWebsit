@@ -63,10 +63,26 @@ function Header() {
           <Menu>
             <MenuButton p="0 30px">关于我们</MenuButton>
             <MenuList>
-              <MenuItem>公司简介</MenuItem>
-              <MenuItem>愿景与使命</MenuItem>
-              <MenuItem>证书与资质</MenuItem>
-              <MenuItem>人才招募-叶永浩</MenuItem>
+              <MenuItem
+                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
+              >
+                公司简介
+              </MenuItem>
+              <MenuItem
+                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
+              >
+                愿景与使命
+              </MenuItem>
+              <MenuItem
+                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
+              >
+                证书与资质
+              </MenuItem>
+              <MenuItem
+                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
+              >
+                人才招募-叶永浩
+              </MenuItem>
             </MenuList>
           </Menu>
           <Menu>
