@@ -13,7 +13,7 @@ import banner from "../../assets/banner.jpg";
 function Banner() {
   return (
     <Box w="100%" bg="#666" color="#fff" mt="74px">
-      <Image src={banner} />
+      <Image w="100%" src={banner} />
       <Box
         w="1160px"
         h="74px"
@@ -24,7 +24,7 @@ function Banner() {
       >
         <Grid templateColumns="repeat(5, 1fr)" gap={6}>
           <GridItem colSpan={1} h="10" lineHeight="40px">
-            小学教育解决方案
+            中小学教育解决方案
           </GridItem>
           <GridItem colSpan={3} h="10" lineHeight="40px">
             <Menu>

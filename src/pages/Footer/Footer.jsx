@@ -1,24 +1,14 @@
-import {
-  Text,
-  Flex,
-  Image,
-  Menu,
-  MenuButton,
-  Button,
-  Link,
-  Box,
-  MenuList,
-  MenuItem,
-} from "@chakra-ui/react";
-import code1 from "../../assets/code1.png";
+import { Text, Image, Box } from "@chakra-ui/react";
+import code1 from "../../assets/code1.jpg";
 import code2 from "../../assets/code2.png";
 import tb from "../../assets/tb.jpg";
 import Address from "./address";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <Box>
-      <Box padding="80px 80px 40px" d="flex">
+      <Box padding="80px 80px 40px" d="flex" m="0 auto" w="1300px">
         <Box w="150px">
           <Box
             fontSize="22px"
@@ -38,7 +28,7 @@ function Footer() {
             <Link href="https://chakra-ui.com">证书与资质</Link>
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            <Link href="https://chakra-ui.com">人才招募-叶永浩</Link>
+            <Link href="https://chakra-ui.com">加入我们</Link>
           </Box>
         </Box>
 
@@ -52,7 +42,7 @@ function Footer() {
             新闻中心
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            <Link href="https://chakra-ui.com">官方新闻</Link>
+            <Link to="/newsList">官方新闻</Link>
           </Box>
         </Box>
         <Box w="450px">
@@ -65,7 +55,7 @@ function Footer() {
             联系我们
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            公司地址：深圳市南学山区西丽街道未来科城先进制造产业园1层
+            公司地址：深圳市南山区西丽街道未来科城先进制造产业园1层
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
             邮箱账号：bd@uz-ai.com
@@ -75,7 +65,6 @@ function Footer() {
           </Box>
           <Box d="flex">
             <Box fontSize="14px" color="#666" paddingBottom="10px">
-              <Box textAlign="center">公众号</Box>
               <Box>
                 <Image
                   boxSize="30px"
@@ -86,9 +75,9 @@ function Footer() {
                   height="126px"
                 />
               </Box>
+              <Text textAlign="center">公众号</Text>
             </Box>
             <Box fontSize="14px" color="#666" paddingBottom="10px">
-              <Box textAlign="center">视频号</Box>
               <Box>
                 <Image
                   boxSize="30px"
@@ -99,6 +88,7 @@ function Footer() {
                   height="120px"
                 />
               </Box>
+              <Text textAlign="center">视频号</Text>
             </Box>
           </Box>
         </Box>
@@ -110,7 +100,7 @@ function Footer() {
             color="#666"
             paddingBottom="30px"
           >
-            新闻中心
+            公司地址
           </Box>
           <Address />
         </Box>
