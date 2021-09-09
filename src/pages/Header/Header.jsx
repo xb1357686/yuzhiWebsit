@@ -9,6 +9,7 @@ import {
   MenuItem,
   Button,
   Link,
+  Heading,
 } from "@chakra-ui/react";
 import { useLocation, Route, Switch, useHistory } from "react-router-dom";
 import { MenuBtn } from "./Header.styles";
@@ -29,19 +30,25 @@ function Header() {
       <Box w="1160px" alignItems="center" m="0 auto">
         <Flex>
           <Flex
-            mr="100px"
+            mr="80px"
             as={Link}
             onClick={() => history.push(window.ENV.URLPATHNAME)}
           >
-            <Image w="155px" src={Logo} alt="logo" mr="10px" />
+            {/* <Image w="155px" src={Logo} alt="logo" mr="10px" /> */}
+            <Heading as="h1" fontSize="26px" color="#3bbbff" pt="4px">
+              育智科创 UZ Creative
+            </Heading>
           </Flex>
           <Menu>
             <MenuButton p="0 30px">产品中心</MenuButton>
             <MenuList>
               <MenuItem>硬件产品</MenuItem>
               <MenuItem>软件产品</MenuItem>
-              <MenuItem>课程体系</MenuItem>
-              <MenuItem>数智化创新领袖</MenuItem>
+              <MenuItem
+                onClick={() => history.push(`${window.ENV.URLPATHNAME}course`)}
+              >
+                课程体系
+              </MenuItem>
             </MenuList>
           </Menu>
           <Menu as={Link}>
@@ -57,33 +64,16 @@ function Header() {
               p="0 30px"
               onClick={() => history.push(`${window.ENV.URLPATHNAME}newsList`)}
             >
-              新闻中心
+              育智资讯
             </MenuButton>
           </Menu>
           <Menu>
-            <MenuButton p="0 30px">关于我们</MenuButton>
-            <MenuList>
-              <MenuItem
-                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
-              >
-                公司简介
-              </MenuItem>
-              <MenuItem
-                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
-              >
-                愿景与使命
-              </MenuItem>
-              <MenuItem
-                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
-              >
-                证书与资质
-              </MenuItem>
-              <MenuItem
-                onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
-              >
-                人才招募-叶永浩
-              </MenuItem>
-            </MenuList>
+            <MenuButton
+              p="0 30px"
+              onClick={() => history.push(`${window.ENV.URLPATHNAME}aboutUs`)}
+            >
+              关于我们
+            </MenuButton>
           </Menu>
           <Menu>
             <MenuBtn
@@ -92,7 +82,7 @@ function Header() {
               as={Link}
               href="https://jinshuju.net/f/D9YFHe"
             >
-              联系我们
+              教育合作
             </MenuBtn>
           </Menu>
           <Menu>
