@@ -23,20 +23,10 @@ import OnlinePlatform from "./OnlinePlatform";
 
 
 function Home() {
-  return <Box>
-    <Introduce></Introduce>
-    <CurriculumSystem></CurriculumSystem>
-    <CurriculumImg></CurriculumImg>
-    {/* 课程服务 */}
-    <CourseService></CourseService>
-    {/* 案例教学过程 Case teaching*/}
-    <CaseTeaching></CaseTeaching>
-    {/* 案例展示(福田劳动技术教育中心） School case */}
-    <SchoolCase></SchoolCase>
-    {/* 红色背景 */}
-    <Grouping></Grouping>
-    {/* 线上平台 */}
-    <OnlinePlatform></OnlinePlatform>
+  return <Box padding="0px">
+
+    {/* 改版首页20210912 */}
+    <SchoolCase></SchoolCase>  
 
 
   </Box>;

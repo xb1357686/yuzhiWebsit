@@ -10,6 +10,8 @@ import Footer from './pages/Footer/Footer';
 import newsLi from "./pages/newsLi/newsLi";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
+import Cyberpi from "./pages/cyberpi/cyberpi";
+import Software from "./pages/Software/Software";
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           <Route exact path={`${window.ENV.URLPATHNAME}newsList`} component={newsLi} />
           <Route exact path={`${window.ENV.URLPATHNAME}aboutUs`} component={AboutUs} />
           <Route exact path={`${window.ENV.URLPATHNAME}course`} component={Course} />
+          <Route exact path={`${window.ENV.URLPATHNAME}Cyberpi`} component={Cyberpi} />
+          <Route exact path={`${window.ENV.URLPATHNAME}Software`} component={Software} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>

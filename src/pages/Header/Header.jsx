@@ -26,6 +26,7 @@ function Header() {
       p="20px 0"
       bg="#fff"
       zIndex="10"
+      borderBottom="1px solid #ebebeb"
     >
       <Box w="1160px" alignItems="center" m="0 auto">
         <Flex>
@@ -42,8 +43,12 @@ function Header() {
           <Menu>
             <MenuButton p="0 30px">产品中心</MenuButton>
             <MenuList>
-              <MenuItem>硬件产品</MenuItem>
-              <MenuItem>软件产品</MenuItem>
+              <MenuItem
+                 onClick={() => history.push(`${window.ENV.URLPATHNAME}cyberpi`)}
+              >硬件产品</MenuItem>
+              <MenuItem
+
+              >软件产品</MenuItem>
               <MenuItem
                 onClick={() => history.push(`${window.ENV.URLPATHNAME}course`)}
               >
