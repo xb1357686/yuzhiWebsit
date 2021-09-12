@@ -12,6 +12,8 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
 import Cyberpi from "./pages/cyberpi/cyberpi";
 import Software from "./pages/Software/Software";
+import Text from "./pages/test";
+import Software from "./pages/Software/software";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Route exact path={`${window.ENV.URLPATHNAME}course`} component={Course} />
           <Route exact path={`${window.ENV.URLPATHNAME}Cyberpi`} component={Cyberpi} />
           <Route exact path={`${window.ENV.URLPATHNAME}Software`} component={Software} />
+          <Route exact path={`${window.ENV.URLPATHNAME}course`} component={Course} />
+          <Route exact path={`${window.ENV.URLPATHNAME}software`} component={Software} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>

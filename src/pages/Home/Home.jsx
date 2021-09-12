@@ -19,9 +19,6 @@ import SchoolCase from "./SchoolCase";
 import Grouping from "./Grouping";
 import OnlinePlatform from "./OnlinePlatform";
 
-
-
-
 function Home() {
   return <Box padding="0px">
 
