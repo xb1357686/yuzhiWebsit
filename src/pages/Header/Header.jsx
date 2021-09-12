@@ -35,15 +35,26 @@ function Header() {
             onClick={() => history.push(window.ENV.URLPATHNAME)}
           >
             {/* <Image w="155px" src={Logo} alt="logo" mr="10px" /> */}
-            <Heading as="h1" fontSize="26px" color="#3bbbff" pt="4px">
-              育智科创 UZ Creative
-            </Heading>
+            <Flex>
+              <Heading as="h1" fontSize="26px" color="#3bbbff" pt="4px">
+                育智科创
+              </Heading>
+              <Text fontSize="26px" color="#3bbbff" ml="12px">
+                UZ Creative
+              </Text>
+            </Flex>
           </Flex>
           <Menu>
             <MenuButton p="0 30px">产品中心</MenuButton>
             <MenuList>
               <MenuItem>硬件产品</MenuItem>
-              <MenuItem>软件产品</MenuItem>
+              <MenuItem
+                onClick={() =>
+                  history.push(`${window.ENV.URLPATHNAME}software`)
+                }
+              >
+                软件产品
+              </MenuItem>
               <MenuItem
                 onClick={() => history.push(`${window.ENV.URLPATHNAME}course`)}
               >

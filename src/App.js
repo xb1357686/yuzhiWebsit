@@ -10,6 +10,8 @@ import Footer from './pages/Footer/Footer';
 import newsLi from "./pages/newsLi/newsLi";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
+import Text from "./pages/test";
+import Software from "./pages/Software/software";
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           <Route exact path={`${window.ENV.URLPATHNAME}newsList`} component={newsLi} />
           <Route exact path={`${window.ENV.URLPATHNAME}aboutUs`} component={AboutUs} />
           <Route exact path={`${window.ENV.URLPATHNAME}course`} component={Course} />
+          <Route exact path={`${window.ENV.URLPATHNAME}course`} component={Course} />
+          <Route exact path={`${window.ENV.URLPATHNAME}software`} component={Software} />
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>
