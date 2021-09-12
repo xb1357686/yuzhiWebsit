@@ -48,15 +48,11 @@ function Header() {
           <Menu>
             <MenuButton p="0 30px">产品中心</MenuButton>
             <MenuList>
-
               <MenuItem
-                 onClick={() => history.push(`${window.ENV.URLPATHNAME}cyberpi`)}
-              >硬件产品</MenuItem>
-              <MenuItem
-
-              >软件产品</MenuItem>
-
-              <MenuItem>硬件产品</MenuItem>
+                onClick={() => history.push(`${window.ENV.URLPATHNAME}cyberpi`)}
+              >
+                硬件产品
+              </MenuItem>
               <MenuItem
                 onClick={() =>
                   history.push(`${window.ENV.URLPATHNAME}software`)

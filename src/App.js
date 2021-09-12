@@ -12,8 +12,6 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
 import Cyberpi from "./pages/cyberpi/cyberpi";
 import Software from "./pages/Software/Software";
-import Text from "./pages/test";
-import Software from "./pages/Software/software";
 
 
 function App() {

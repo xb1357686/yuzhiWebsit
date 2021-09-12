@@ -49,10 +49,16 @@ function Home() {
         <Box width="994px" m="0 auto" mt="35px">
           <Tabs variant="unstyled" align="center">
             <TabList>
-              <Tab _selected={{ color: "#1795f4", bg: "white" }}>
+              <Tab
+                borderRadius="5px"
+                _selected={{ color: "#1795f4", bg: "white" }}
+              >
                 图形化编程模式
               </Tab>
-              <Tab _selected={{ color: "#1795f4", bg: "white" }}>
+              <Tab
+                borderRadius="5px"
+                _selected={{ color: "#1795f4", bg: "white" }}
+              >
                 Python编程模式
               </Tab>
             </TabList>
