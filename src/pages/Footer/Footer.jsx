@@ -1,6 +1,6 @@
 import { Text, Image, Box } from "@chakra-ui/react";
 import code1 from "../../assets/code1.jpg";
-import code2 from "../../assets/code2.png";
+import code2 from "../../assets/code2.jpg";
 import tb from "../../assets/tb.jpg";
 import Address from "./address";
 import { Link } from "react-router-dom";
@@ -19,17 +19,17 @@ function Footer() {
             关于我们
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            <Link href="https://chakra-ui.com">公司简介</Link>
+            <Link to="/aboutUs">公司简介</Link>
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            <Link href="https://chakra-ui.com">愿景与使命</Link>
+            <Link to="/aboutUs">愿景与使命</Link>
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            <Link href="https://chakra-ui.com">证书与资质</Link>
+            <Link to="/aboutUs">证书与资质</Link>
           </Box>
-          <Box fontSize="14px" color="#666" paddingBottom="10px">
+          {/* <Box fontSize="14px" color="#666" paddingBottom="10px">
             <Link href="https://chakra-ui.com">加入我们</Link>
-          </Box>
+          </Box> */}
         </Box>
 
         <Box w="150px">
@@ -39,7 +39,7 @@ function Footer() {
             color="#666"
             paddingBottom="30px"
           >
-            新闻中心
+            育智资讯
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
             <Link to="/newsList">官方新闻</Link>
@@ -55,13 +55,13 @@ function Footer() {
             联系我们
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            公司地址：深圳市南山区西丽街道未来科城先进制造产业园1层
+            公司地址：深圳市南山区西丽街道未来科学城先进制造产业园1层
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
             邮箱账号：bd@uz-ai.com
           </Box>
           <Box fontSize="14px" color="#666" paddingBottom="10px">
-            公司座机: 0755-85289674
+            公司座机：0755-85289674
           </Box>
           <Box d="flex">
             <Box fontSize="14px" color="#666" paddingBottom="10px">
@@ -84,8 +84,8 @@ function Footer() {
                   src={code2}
                   alt="logo"
                   mr="10px"
-                  width="120px"
-                  height="120px"
+                  width="126px"
+                  height="126px"
                 />
               </Box>
               <Text textAlign="center">视频号</Text>

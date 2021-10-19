@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Image, Link, Box } from "@chakra-ui/react";
-import newsListPng from "../../assets/newsList.png";
+import newsListPng from "../../assets/newsList.jpg";
 
 function NewsList() {
   const [newsList, setNewsList] = useState([]);
@@ -20,7 +20,7 @@ function NewsList() {
   };
 
   return (
-    <Box padding="60px 80px" bg="#fafafb">
+    <Box m="0 auto" bg="#fafafb" maxWidth="1167px" mt="80px">
       <Box>
         <Image src={newsListPng} />
       </Box>
