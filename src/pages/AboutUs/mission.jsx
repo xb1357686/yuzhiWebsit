@@ -17,26 +17,31 @@ import mission1 from "../../assets/mission1.jpg";
 
 function CompanyProfile() {
   return (
-    <Box bg="#f9f9f9">
+    <Box>
       <Box w="1160px" m="0 auto">
         <Box>
           <Image src={mission1} width="100%"></Image>
         </Box>
-        <Heading as="h1" textAlign="center" p="20px 0">
+        <Heading
+          as="h1"
+          textAlign="center"
+          p="20px 0"
+          fontFamily="Microsoft YaHei"
+        >
           联系我们
         </Heading>
         <Flex textAlign="center" justifyContent="center">
           <Box p="10px 20px">
             <Image src={code3} width="126px" height="126px"></Image>
-            <Text>叶永浩 微信号</Text>
+            <Text>微信号</Text>
           </Box>
           <Box p="10px 20px">
             <Image src={code2} width="126px" height="126px"></Image>
-            <Text>叶永浩 视频号</Text>
+            <Text>视频号</Text>
           </Box>
           <Box p="10px 20px">
             <Image src={code1} width="126px" height="126px"></Image>
-            <Text>育智科创 公众号</Text>
+            <Text>公众号</Text>
           </Box>
         </Flex>
 

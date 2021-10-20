@@ -39,7 +39,7 @@ class CurriculumImg extends Component {
         <div className="swiper-container1">
           <div className="swiper-wrapper">
             <div className="swiper-slide ">
-              <Image src={school1} />
+              <Image src={school1} m="0 auto" />
             </div>
             <div className="swiper-slide ">
               <Image src={school2} />

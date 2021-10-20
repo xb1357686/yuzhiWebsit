@@ -1,25 +1,15 @@
-import { Image, Box, Text, Button, Link } from "@chakra-ui/react";
+import { Image, Box, Text, Button, Link, Flex } from "@chakra-ui/react";
+import coos1 from "../../assets/coos1.JPG";
+import coos2 from "../../assets/coos2.JPG";
+import coos3 from "../../assets/coos3.JPG";
+import coos4 from "../../assets/coos4.JPG";
+import coos5 from "../../assets/coos5.JPG";
+import coos6 from "../../assets/coos6.JPG";
 import Company1 from "../../assets/Company1.jpg";
-import Company2 from "../../assets/Company2.jpg";
-import Company3 from "../../assets/Company3.png";
-import Company17 from "../../assets/Company17.png";
-import Company4 from "../../assets/Company4.png";
-import Company5 from "../../assets/Company5.png";
-import Company6 from "../../assets/Company6.png";
-import Company7 from "../../assets/Company7.png";
-import Company8 from "../../assets/Company8.png";
-import Company9 from "../../assets/Company9.jpg";
-import Company10 from "../../assets/Company10.png";
-import Company11 from "../../assets/Company11.png";
-import Company12 from "../../assets/Company12.png";
-import Company13 from "../../assets/Company13.png";
-import Company14 from "../../assets/Company14.png";
-import Company15 from "../../assets/Company15.png";
-import Company16 from "../../assets/Company16.png";
 
 function CompanyProfile() {
   return (
-    <Box bg="#f9f9f9">
+    <Box bg="#f9f9f9" textAlign="center">
       <Box paddingBottom="30px" w="1160px" m="0 auto" bg="#fff">
         <Box>
           <Image src={Company1} width="100%"></Image>
@@ -82,7 +72,16 @@ function CompanyProfile() {
             fontSize="16px"
             paddingBottom="60px"
           >
-            开拓创新 追求卓越
+            <Flex>
+              <Image src={coos1} width="100%" height="500px"></Image>
+              <Image src={coos2} m="0 10px" width="100%" height="500px"></Image>
+              <Image src={coos3} width="100%" height="500px"></Image>
+            </Flex>
+            <Flex>
+              <Image src={coos4} width="100%" height="500px"></Image>
+              <Image src={coos5} m="0 10px" width="100%" height="500px"></Image>
+              <Image src={coos6} width="100%" height="500px"></Image>
+            </Flex>
           </Box>
           {/* <Box d="flex">
             <Box w="45%" p={3}>

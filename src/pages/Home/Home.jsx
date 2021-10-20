@@ -18,15 +18,16 @@ import CaseTeaching from "./CaseTeaching";
 import SchoolCase from "./SchoolCase";
 import Grouping from "./Grouping";
 import OnlinePlatform from "./OnlinePlatform";
+import Footer from "../Footer/Footer";
 
 function Home() {
-  return <Box padding="0px">
-
-    {/* 改版首页20210912 */}
-    <SchoolCase></SchoolCase>  
-
-
-  </Box>;
+  return (
+    <Box padding="0px">
+      {/* 改版首页20210912 */}
+      <SchoolCase></SchoolCase>
+      <Footer />
+    </Box>
+  );
 }
 
 export default Home;

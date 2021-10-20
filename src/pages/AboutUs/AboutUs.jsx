@@ -36,7 +36,7 @@ export default class AboutUs extends Component {
     const { aboutNavID, aboutNav } = this.state;
     return (
       <Box pt="90px">
-        <Box bg="#fff" padding="20px 0">
+        {/* <Box bg="#fff" padding="20px 0">
           <Box
             padding="0 80px"
             d="flex"
@@ -59,10 +59,11 @@ export default class AboutUs extends Component {
               );
             })}
           </Box>
-        </Box>
-        {aboutNavID === 1 && <CompanyProfile />}
-        {aboutNavID === 2 && <Mission />}
+        </Box> */}
+        {/* {aboutNavID === 1 && <CompanyProfile />} */}
+        {/* {aboutNavID === 2 && <Mission />} */}
         {/* {aboutNavID === 3 && <Contact />} */}
+        <CompanyProfile />
       </Box>
     );
   }

@@ -47,7 +47,7 @@ function Header() {
           </Flex>
           <Menu>
             <MenuButton p="0 30px">产品中心</MenuButton>
-            <MenuList>
+            {/* <MenuList>
               <MenuItem
                 onClick={() => history.push(`${window.ENV.URLPATHNAME}cyberpi`)}
               >
@@ -65,7 +65,7 @@ function Header() {
               >
                 课程体系
               </MenuItem>
-            </MenuList>
+            </MenuList> */}
           </Menu>
           <Menu as={Link}>
             <MenuBtn
@@ -96,7 +96,10 @@ function Header() {
               p="0 30px"
               target="_blank"
               as={Link}
-              href="https://jinshuju.net/f/D9YFHe"
+              // href="https://jinshuju.net/f/D9YFHe"
+              onClick={() =>
+                history.push(`${window.ENV.URLPATHNAME}cooperation`)
+              }
             >
               教育合作
             </MenuBtn>

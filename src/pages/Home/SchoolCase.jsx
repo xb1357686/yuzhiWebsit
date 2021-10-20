@@ -1,5 +1,5 @@
 import { Image, Box, Text, Button, Link } from "@chakra-ui/react";
-import sys from "../../assets/sys1.jpg";
+import sys from "../../assets/sys.jpg";
 import md from "../../assets/md.jpg";
 import Swiper3 from "./swiper3";
 function Introduce() {
@@ -14,6 +14,7 @@ function Introduce() {
           fontSize="36px"
           fontWeight="400"
           colo="#333"
+          fontFamily="Microsoft YaHei"
         >
           科技创新实验室整体解决方案
         </Box>
@@ -24,7 +25,7 @@ function Introduce() {
           color="#de4d4c"
         >
           <Image src={sys} />
-          <Box position="absolute" left="20px" top="160px">
+          {/* <Box position="absolute" left="20px" top="160px">
             <Text m="40px 10px">软件教学平台</Text>
             <Text m="40px 10px">硬件教学套件</Text>
             <Text m="40px 10px">课程教学资源</Text>
@@ -33,7 +34,7 @@ function Introduce() {
             <Text m="40px 10px">课室选配设备</Text>
             <Text m="40px 10px">课室建设服务</Text>
             <Text m="40px 10px">课室运营服务</Text>
-          </Box>
+          </Box> */}
         </Box>
         <Box
           textAlign="center"
@@ -41,6 +42,7 @@ function Introduce() {
           fontSize="36px"
           fontWeight="400"
           colo="#333"
+          fontFamily="Microsoft YaHei"
         >
           合作案例
         </Box>

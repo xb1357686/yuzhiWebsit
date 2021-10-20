@@ -6,12 +6,12 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import HomePage from './pages/HomePage/HomePage';
 import Home from './pages/Home/Home';
 import Header from './pages/Header/Header';
-import Footer from './pages/Footer/Footer';
 import newsLi from "./pages/newsLi/newsLi";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
 import Cyberpi from "./pages/cyberpi/cyberpi";
 import Software from "./pages/Software/Software";
+import Cooperation from "./pages/Cooperation/cooperation";
 
 
 function App() {
@@ -37,13 +37,12 @@ function App() {
           <Route exact path={`${window.ENV.URLPATHNAME}Cyberpi`} component={Cyberpi} />
           <Route exact path={`${window.ENV.URLPATHNAME}Software`} component={Software} />
           <Route exact path={`${window.ENV.URLPATHNAME}course`} component={Course} />
-          <Route exact path={`${window.ENV.URLPATHNAME}software`} component={Software} />
+          <Route exact path={`${window.ENV.URLPATHNAME}cooperation`} component={Cooperation} />
+
           <Route path="/page-not-found" component={NotFoundPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </main>
-      <Footer />
-
     </>
   );
 }
