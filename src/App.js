@@ -1,4 +1,4 @@
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation, useHistory } from 'react-router-dom';
 import { useState, useEffect } from "react";
 
 // components
@@ -16,7 +16,9 @@ import Cooperation from "./pages/Cooperation/cooperation";
 
 function App() {
   // const [isShow, setIsShow] = useState(true);
-  // const { pathname } = useLocation();
+  const history = useHistory();
+  const { pathname } = useLocation();
+  console.log('pathname', pathname)
   // useEffect(() => {
   //   if (pathname.includes('/newsList')) {
   //     setIsShow(false);
@@ -24,6 +26,10 @@ function App() {
   //     setIsShow(true);
   //   }
   // }, [pathname])
+  if (pathname === '/') {
+    history.push(`${window.ENV.URLPATHNAME}`)
+  }
+
   return (
     <>
       <Header />
