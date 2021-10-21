@@ -14,7 +14,8 @@ import './App.css';
 // const DEV_BASE_URL = 'dev.platform.michaels.com';
 if (process.env.NODE_ENV !== 'development') {
   window.ENV = {
-    URLPATHNAME: '/yuzhiWebsit/'
+    // URLPATHNAME: '/yuzhiWebsit/'
+    URLPATHNAME: '/'
   }
 } else {
   window.ENV = {
