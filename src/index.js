@@ -4,7 +4,7 @@ import 'react-app-polyfill/stable';
 // =================================================
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 
 // configs
@@ -29,9 +29,9 @@ if (process.env.NODE_ENV !== 'development') {
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')

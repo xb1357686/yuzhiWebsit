@@ -32,7 +32,7 @@ function HomePage() {
         width="103%"
         mt="74px"
       >
-        <Box height={`${window.innerHeight - 74}px`}></Box>
+        <Box height={`${100}px`}></Box>
         <Flex justifyContent="center" fontSize="24px" color="#fff">
           <Text m="0 10px">人工智能与编程教育</Text>
           <Text>|</Text>

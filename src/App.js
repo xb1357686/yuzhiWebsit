@@ -26,9 +26,9 @@ function App() {
   //     setIsShow(true);
   //   }
   // }, [pathname])
-  if (pathname === '/') {
-    history.push(`${window.ENV.URLPATHNAME}`)
-  }
+  // if (pathname === '/') {
+  //   history.push(`${window.ENV.URLPATHNAME}`)
+  // }
 
   return (
     <>
