@@ -27,20 +27,21 @@ function CompanyProfile() {
           textAlign="center"
           p="20px 0"
           fontFamily="Microsoft YaHei"
+          mt="30px"
         >
           联系我们
         </Heading>
         <Flex textAlign="center" justifyContent="center">
           <Box p="10px 20px">
-            <Image src={code3} width="126px" height="126px"></Image>
+            <Image src={code3} width="200px" height="200px"></Image>
             <Text>微信号</Text>
           </Box>
           <Box p="10px 20px">
-            <Image src={code2} width="126px" height="126px"></Image>
+            <Image src={code2} width="200px" height="200px"></Image>
             <Text>视频号</Text>
           </Box>
           <Box p="10px 20px">
-            <Image src={code1} width="126px" height="126px"></Image>
+            <Image src={code1} width="200px" height="200px"></Image>
             <Text>公众号</Text>
           </Box>
         </Flex>

@@ -4,7 +4,7 @@ import Swiper from "swiper";
 
 import "swiper/css/swiper.css";
 
-import school1 from "../../assets/bannerHome1.jpg";
+import school1 from "../../assets/banner4.jpg";
 import school2 from "../../assets/bannerHome2.jpg";
 import school3 from "../../assets/bannerHome3.jpg";
 

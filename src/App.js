@@ -18,7 +18,7 @@ function App() {
   // const [isShow, setIsShow] = useState(true);
   const history = useHistory();
   const { pathname } = useLocation();
-  console.log('pathname', pathname)
+  console.log('version0.1')
   // useEffect(() => {
   //   if (pathname.includes('/newsList')) {
   //     setIsShow(false);
@@ -26,9 +26,9 @@ function App() {
   //     setIsShow(true);
   //   }
   // }, [pathname])
-  // if (pathname === '/') {
-  //   history.push(`${window.ENV.URLPATHNAME}`)
-  // }
+  if (pathname === '/') {
+    history.push(`/yuzhiWebsit/`)
+  }
 
   return (
     <>

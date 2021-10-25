@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Box } from "@chakra-ui/react";
 import CompanyProfile from "./CompanyProfile";
-import Contact from "./Contact";
-import Mission from "./mission";
+// import Contact from "./Contact";
+// import Mission from "./mission";
 import "./index.css";
 
 export default class AboutUs extends Component {

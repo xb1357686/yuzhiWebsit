@@ -10,9 +10,6 @@ import {
 import styled from "@emotion/styled/macro";
 import Content from "../Content/Content";
 import banner1 from "../../assets/banner1.jpg";
-import banner8 from "../../assets/banner8.png";
-import md from "../../assets/md.jpg";
-import Eight from "./eight";
 
 const ScorrlBox = styled(Box)`
   overflow: hidden;

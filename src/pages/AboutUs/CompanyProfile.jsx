@@ -1,10 +1,10 @@
 import { Image, Box, Text, Button, Link, Flex } from "@chakra-ui/react";
-import coos1 from "../../assets/coos1.JPG";
-import coos2 from "../../assets/coos2.JPG";
-import coos3 from "../../assets/coos3.JPG";
-import coos4 from "../../assets/coos4.JPG";
-import coos5 from "../../assets/coos5.JPG";
-import coos6 from "../../assets/coos6.JPG";
+import coos1 from "../../assets/coos1.jpg";
+import coos2 from "../../assets/coos2.jpg";
+import coos3 from "../../assets/coos3.jpg";
+import coos4 from "../../assets/coos4.jpg";
+import coos5 from "../../assets/coos5.jpg";
+import coos6 from "../../assets/coos6.jpg";
 import Company1 from "../../assets/Company1.jpg";
 
 function CompanyProfile() {
@@ -72,15 +72,15 @@ function CompanyProfile() {
             fontSize="16px"
             paddingBottom="60px"
           >
-            <Flex>
-              <Image src={coos1} width="100%" height="500px"></Image>
-              <Image src={coos2} m="0 10px" width="100%" height="500px"></Image>
-              <Image src={coos3} width="100%" height="500px"></Image>
+            <Flex mb="20px">
+              <Image src={coos1} width="100%" height="400px"></Image>
+              <Image src={coos2} m="0 10px" width="100%" height="400px"></Image>
+              <Image src={coos3} width="100%" height="400px"></Image>
             </Flex>
             <Flex>
-              <Image src={coos4} width="100%" height="500px"></Image>
-              <Image src={coos5} m="0 10px" width="100%" height="500px"></Image>
-              <Image src={coos6} width="100%" height="500px"></Image>
+              <Image src={coos4} width="100%" height="400px"></Image>
+              <Image src={coos5} m="0 10px" width="100%" height="400px"></Image>
+              <Image src={coos6} width="100%" height="400px"></Image>
             </Flex>
           </Box>
           {/* <Box d="flex">

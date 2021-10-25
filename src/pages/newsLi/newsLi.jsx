@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Image, Link, Box } from "@chakra-ui/react";
 import newsListPng from "../../assets/newsList.jpg";
 
+// mock 地址 ： www.fastmock.site  账号密码： rock / qwer123456
+
 function NewsList() {
   const [newsList, setNewsList] = useState([]);
   useEffect(() => {
@@ -26,7 +28,7 @@ function NewsList() {
       </Box>
       {newsList.map((item, index) => {
         return (
-          <Link href="https://www.jiemodui.com/N/123274" key={index}>
+          <Link href={item.link} target="_blank" key={index}>
             <Box
               marginBottom="30px"
               d="flex"
