@@ -27,7 +27,7 @@ function App() {
   //   }
   // }, [pathname])
   if (pathname === '/') {
-    // history.push(`/yuzhiWebsit/`)
+    history.push(`/yuzhiWebsit/`)
   }
 
   return (
