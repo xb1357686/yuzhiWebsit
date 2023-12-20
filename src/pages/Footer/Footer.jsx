@@ -1,5 +1,7 @@
-import { Text, Image, Box } from "@chakra-ui/react";
+import { Text, Image, Box, Flex } from "@chakra-ui/react";
 import code1 from "../../assets/code1.jpg";
+import credible from "../../assets/kexin.png";
+import trademark from "../../assets/shangbiao.png";
 import code2 from "../../assets/code2.jpg";
 import tb from "../../assets/tb.jpg";
 import Address from "./address";
@@ -104,6 +106,33 @@ function Footer() {
           </Box>
           <Address />
         </Box>
+      </Box>
+      <Box color="#ff0604" mb="14px" fontWeight="bold">
+        <Text textAlign="center" fontSize="14px">
+          深圳育智科创科技有限公司© 2019-2023 粤ICP备2023002383号-1
+        </Text>
+        <Text textAlign="center" fontSize="12px">
+          工信部备案管理系统网址：
+          <a href="https://beian.miit.gov.cn" target="_blank" rel="noreferrer">
+            https://beian.miit.gov.cn
+          </a>
+        </Text>
+        {/* <Flex justifyContent="center" mb="10px" mt="10px">
+          <Image
+            src={trademark}
+            alt="logo"
+            mr="10px"
+            width="131px"
+            height="47px"
+          />
+          <Image
+            src={credible}
+            alt="logo"
+            mr="10px"
+            width="131px"
+            height="47px"
+          />
+        </Flex> */}
       </Box>
       <Box bg="#2b2924">
         <Box padding="20px 80px" color="#fff">

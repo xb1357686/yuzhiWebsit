@@ -1,145 +1,94 @@
-import {
-  Text,
-  Tabs,
-  Image,
-  TabPanels,
-  TabPanel,
-  TabList,
-  Tab,
-  Box,
-  MenuList,
-  MenuItem,
-  Heading,
-} from "@chakra-ui/react";
-// import {} from './software.styles';
-import Bg4 from "../../assets/bg-04.jpeg";
-import Frame from "../../assets/bg-frame.png";
-import Block from "../../assets/img-block-zh.jpeg";
-import Python from "../../assets/img-python-zh.jpeg";
-import Bg6 from "../../assets/bg-06.png";
-import Icon1 from "../../assets/icon-1.png";
-import Icon2 from "../../assets/icon-2.png";
-import Icon3 from "../../assets/icon-3.png";
-import Icon4 from "../../assets/icon-4.png";
-import Icon5 from "../../assets/icon-5.png";
-const style = {
-  color: "#000",
-  bg: "white",
-  boxShadow: "0px 24px 40px 0px rgb(153 177 190 / 20%)",
-  borderRadius: "8px",
-};
+import React, { Component } from 'react';
+import bg1 from "../../assets/bg-01.jpg";
+import bg3 from "../../assets/bg-02.png";
+import bg2 from "../../assets/bg-frame.png";
+import python from "../../assets/img-python-zh.jpg";
+import block from "../../assets/img-block-zh.jpg";
 
-function Software() {
-  return (
-    <>
-      <Box
-        padding="80px"
-        position="relative"
-        bg={`url(${Bg4})`}
-        textAlign="center"
-        color="#fff"
-        s
-      >
-        <Heading as="h2" fontSize="40px" mt="35px">
-          专注软硬结合的国产双模式编程软件
-        </Heading>
-        <Text fontSize="16px" mt="4px">
-          深受全球 1500 万老师和学生的信赖
-        </Text>
-        <Box width="994px" m="0 auto" mt="35px">
-          <Tabs variant="unstyled" align="center">
-            <TabList>
-              <Tab
-                borderRadius="5px"
-                _selected={{ color: "#1795f4", bg: "white" }}
-              >
-                图形化编程模式
-              </Tab>
-              <Tab
-                borderRadius="5px"
-                _selected={{ color: "#1795f4", bg: "white" }}
-              >
-                Python编程模式
-              </Tab>
-            </TabList>
-            <TabPanels
-              bg={`url(${Frame}) no-repeat`}
-              height="613px"
-              p="20px"
-              overflow="hidden"
-              mt="30px"
-            >
-              <TabPanel>
-                <Image fit="cover" src={Block} />
-              </TabPanel>
-              <TabPanel>
-                <Image fit="cover" src={Python} />
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
-        </Box>
-        <Box
-          position="absolute"
-          bottom="0"
-          width="100%"
-          height="252px"
-          left="0"
-          bg={`url(${Bg6}) no-repeat`}
-        ></Box>
-      </Box>
-      <Box width="820px" m="0 auto">
-        <Box width="994px" m="0 auto" mt="35px">
-          <Tabs variant="unstyled" align="center">
-            <TabList color="#99b1be">
-              <Tab _selected={style} display="block" p="10px" mr="10px">
-                <Image boxSize="80px" m="0 auto" src={Icon1}></Image>
-                <Text>图形化编程</Text>
-              </Tab>
-              <Tab _selected={style} display="block" mr="10px">
-                <Image boxSize="80px" m="0 auto" src={Icon2}></Image>
-                <Text>Python编程</Text>
-              </Tab>
-              <Tab _selected={style} display="block" mr="10px">
-                <Image boxSize="80px" m="0 auto" src={Icon3}></Image>
-                <Text>机器人编程</Text>
-              </Tab>
-              <Tab _selected={style} display="block" mr="10px">
-                <Image boxSize="80px" m="0 auto" src={Icon4}></Image>
-                <Text>人工智能</Text>
-              </Tab>
-              <Tab _selected={style} display="block" mr="10px">
-                <Image boxSize="80px" m="0 auto" src={Icon5}></Image>
-                <Text>数据科学</Text>
-              </Tab>
-            </TabList>
-            <TabPanels
-              height="520px"
-              width="820px"
-              p="20px"
-              overflow="hidden"
-              mt="30px"
-            >
-              <TabPanel>
-                <Image fit="cover" src={Block} />
-              </TabPanel>
-              <TabPanel>
-                <Image fit="cover" src={Python} />
-              </TabPanel>
-              <TabPanel>
-                <Image fit="cover" src={Python} />
-              </TabPanel>
-              <TabPanel>
-                <Image fit="cover" src={Python} />
-              </TabPanel>
-              <TabPanel>
-                <Image fit="cover" src={Python} />
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
-        </Box>
-      </Box>
-    </>
-  );
+
+import { Image, Box, Text, Button, Link } from "@chakra-ui/react";
+import './index.css';
+class Software extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            aboutNav: [
+                {
+                    id: '1',
+                    name: "图形化编程模式"
+                },
+                {
+                    id: '2',
+                    name: "Python编程模式"
+                },
+            ],
+            aboutNavID: 1,
+        }
+    }
+    aboutClict = (i) => {
+        this.setState({
+            aboutNavID: i
+        })
+    }
+
+    render() {
+        const { aboutNavID, aboutNav } = this.state;
+        return (
+            <Box paddingTop="70px">
+                <Box bg={`url(${bg1})`} height="590px" backgroundSize="cover" position="relative" overflow="hidden">
+                    <Box textAlign="center" paddingTop="50px" fontSize="32px" color="#fff" fontWeight="400">专注软硬结合的国产双模式编程软件</Box>
+                    <Box textAlign="center" paddingBottom="30px" fontSize="14px" color="#fff" fontWeight="400">深受全球 1500 万老师和学生的信赖</Box>
+
+                    <Box width="440px"
+                        border="2px solid rgba(255,255,255,0.4)"
+                        fontSize="16px"
+                        color="#fff"
+                        height="42px" lineHeight="38px" margin="0 auto 30px" bg="rgba(255,255,255,0.1)" borderRadius="50px">
+                        {
+                            aboutNav.map((item, index) => {
+                                return (
+                                    <Box key={index} cursor="pointer"
+                                        display="inline-block"
+                                        width="50%"
+                                        textAlign="center"
+                                        onClick={() => this.aboutClict(item.id)}
+
+                                        className={aboutNavID == item.id ? "name" : ""}
+
+                                    >{item.name}</Box>
+                                )
+                            })
+                        }
+                    </Box>
+                    <Box  overflow="hidden" bg={`url(${bg2})`} width="680px" height="394px" margin="0 auto" backgroundSize="cover">
+
+                        {
+                            aboutNavID == 1 ?
+                                (<Box padding="20px">
+                                    <Image src={python} />
+                                </Box>)
+                                : aboutNavID == 2 ?
+                                    (<Box padding="20px">
+                                        <Image src={block} />
+                                    </Box>)
+                                    : null
+                        }
+
+
+
+                    </Box>
+                    
+                    <Box  bg={`url(${bg3})`} position="absolute" width="100%" height="166px" left="0"  bottom="0" backgroundSize="contain">
+
+                    </Box>
+                
+                
+                </Box>
+
+            </Box>
+        );
+    }
 }
 
 export default Software;
