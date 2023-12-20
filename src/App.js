@@ -10,7 +10,7 @@ import newsLi from "./pages/newsLi/newsLi";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
 import Cyberpi from "./pages/cyberpi/cyberpi";
-import Software from "./pages/Software/software";
+import Software from "./pages/Software";
 import Cooperation from "./pages/Cooperation/cooperation";
 
 

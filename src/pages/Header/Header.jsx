@@ -46,7 +46,12 @@ function Header() {
             </Flex>
           </Flex>
           <Menu>
-            <MenuButton p="0 30px">产品中心</MenuButton>
+            <MenuButton
+              p="0 30px"
+              onClick={() => history.push(`${window.ENV.URLPATHNAME}`)}
+            >
+              产品中心
+            </MenuButton>
             {/* <MenuList>
               <MenuItem
                 onClick={() => history.push(`${window.ENV.URLPATHNAME}cyberpi`)}
