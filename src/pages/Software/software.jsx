@@ -29,7 +29,7 @@ const style = {
   borderRadius: "8px",
 };
 
-function Home() {
+function Software() {
   return (
     <>
       <Box
@@ -142,4 +142,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Software;

@@ -32,12 +32,12 @@ function Header() {
         <Flex>
           <Flex
             mr="80px"
-            as={Link}
+            cursor="pointer"
             onClick={() => history.push(window.ENV.URLPATHNAME)}
           >
             {/* <Image w="155px" src={Logo} alt="logo" mr="10px" /> */}
             <Flex>
-              <Heading as="h1" fontSize="26px" color="#3bbbff" pt="4px">
+              <Heading as="h1" hover fontSize="26px" color="#3bbbff" pt="4px">
                 育智科创
               </Heading>
               <Text fontSize="26px" color="#3bbbff" ml="12px">

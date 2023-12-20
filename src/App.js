@@ -10,7 +10,7 @@ import newsLi from "./pages/newsLi/newsLi";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Course from "./pages/course/course";
 import Cyberpi from "./pages/cyberpi/cyberpi";
-import Software from "./pages/Software/Software";
+import Software from "./pages/Software/software";
 import Cooperation from "./pages/Cooperation/cooperation";
 
 
@@ -27,7 +27,7 @@ function App() {
   //   }
   // }, [pathname])
   if (pathname === '/') {
-    history.push(`/yuzhiWebsit/`)
+    // history.push(`/yuzhiWebsit/`)
   }
 
   return (

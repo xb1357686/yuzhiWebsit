@@ -118,9 +118,9 @@ function Footer() {
             display="inline-block"
           />
           <span>官方商城：</span>
-          <Link href="https://shop259321701.taobao.com/?spm=a230r.7195193.1997079397.2.3f0b14778jz3dZ">
+          <a href="https://shop259321701.taobao.com/?spm=a230r.7195193.1997079397.2.3f0b14778jz3dZ">
             派森乐园官方商城-淘宝网 (taobao.com)
-          </Link>
+          </a>
         </Box>
       </Box>
       <Box
